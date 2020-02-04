@@ -1,0 +1,21 @@
+<template>
+  <section class="bg-black flex items-center justify-center h-screen w-full">
+    <div class="container">
+      <h1 class="text-white uppercase leading-tight text-8xl">
+        I build<br>
+        websites
+      </h1>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: 'Banner'
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="scss" scoped>
+
+</style>
