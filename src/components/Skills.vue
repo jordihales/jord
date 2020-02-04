@@ -20,11 +20,11 @@ export default {
   data: () => {
     return {
       skills: {
-        backend: ["Ruby", "Rails"],
+        backend: ["Ruby on Rails"],
         html: ["HTML", "HAML", "ERB"],
-        css: ["SCSS", "Tailwind", "Foundation"],
+        css: ["SCSS", "Tailwind"],
         javascript: ["JavaScript", "jQuery"],
-        design: ["Photoshop", "XD", "Illustrator"]
+        design: ["Illustrator", "XD"]
       }
     }
   }
@@ -46,6 +46,9 @@ export default {
 
       @screen lg {
         @apply text-4xl;
+      }
+      &:hover {
+        filter: blur(5px);
       }
     }
   }

@@ -1,4 +1,10 @@
 <template>
+  <header class="w-full absolute">
+    <h3 class="text-white uppercase py-6 pl-6">Jord.</h3>
+  </header>
+</template>
+
+<template>
   <section class="bg-black flex items-center justify-center h-screen w-full">
     <div class="container">
       <h1 class="text-white uppercase leading-tight text-8xl">
