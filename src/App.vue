@@ -5,6 +5,7 @@
     <Banner/>
     <Skills/>
     <Social/>
+    <Footer/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import Banner from './components/Banner.vue'
 import Skills from './components/Skills.vue'
 import Social from './components/Social.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
@@ -22,7 +24,8 @@ export default {
     HelloWorld,
     Banner,
     Skills,
-    Social
+    Social,
+    Footer
   }
 }
 </script>

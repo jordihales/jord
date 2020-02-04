@@ -3,16 +3,16 @@
     <div class="split--black">
       <ul class="black__list">
         <li class="spacey text-white mb-4 uppercase">
-          <p>Email</p>
+          <a href="mailto:jordi@halesdesignco.com">Email</a>
         </li>
         <li class="spacey text-white mb-4 uppercase">
-          <p>Twitter</p>
+          <a href="https://www.twitter.com/consolelogjordi">Twitter</a>
         </li>
         <li class="spacey text-white mb-4 uppercase">
-          <p>Github</p>
+          <a href="https://www.github.com/jordihales">Github</a>
         </li>
         <li class="spacey text-white mb-4 uppercase">
-          <p>Codepen</p>
+          <a href="https://www.codepen.io/jordihales">Codepen</a>
         </li>
       </ul>
     </div>
