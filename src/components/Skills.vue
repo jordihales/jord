@@ -41,7 +41,7 @@ export default {
     }
 
     &__text {
-      @apply text-xl text-white uppercase inline-block;
+      @apply text-2xl text-white uppercase inline-block;
       transition: 200ms ease;
 
       @screen lg {

@@ -5,9 +5,9 @@
 </template>
 
 <template>
-  <section class="bg-black flex items-center justify-center h-screen w-full">
+  <section class="banner">
     <div class="container">
-      <h1 class="text-white uppercase leading-tight text-8xl">
+      <h1 class="banner__title">
         I build<br>
         websites
       </h1>
