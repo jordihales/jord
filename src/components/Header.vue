@@ -1,6 +1,7 @@
 <template>
   <header class="w-full absolute">
     <h3 class="text-white uppercase py-6 pl-6">JORD</h3>
+    <img src="../assets/a.png" /> 
   </header>
 </template>
 
