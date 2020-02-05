@@ -1,6 +1,6 @@
 <template>
   <header class="w-full absolute">
-    <h3 class="text-white uppercase py-6 pl-6">Jord.</h3>
+    <h3 class="text-white uppercase py-6 pl-6">Boy Butts</h3>
   </header>
 </template>
 
