@@ -1,6 +1,7 @@
 <template>
-  <div id="app">
-    <Header/>
+  <div id="app" class="app" :data-theme="mode">
+    <Header :mode="mode" @toggle="toggle"/>
+    <Toggle/>
     <HelloWorld/>
     <Banner/>
     <Skills/>
@@ -16,9 +17,15 @@ import Banner from './components/Banner.vue'
 import Skills from './components/Skills.vue'
 import Social from './components/Social.vue'
 import Footer from './components/Footer.vue'
+import Toggle from './components/Toggle.vue'
 
 export default {
   name: 'app',
+  data () {
+    return {
+      mode: "dark"
+    }
+  },
   components: {
     Header,
     HelloWorld,
@@ -26,10 +33,19 @@ export default {
     Skills,
     Social,
     Footer
+  },
+  methods: {
+    toggle () {
+      if (this.mode === "dark") {
+        this.mode = "light"
+      } else {
+        this.mode = "dark"
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss">
-  @import "styles/index.scss"
+  @import "styles/index.scss";
 </style>

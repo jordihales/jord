@@ -44,7 +44,7 @@ export default {
     }
 
     &__text {
-      @apply text-2xl text-black font-extrabold font-sans inline-block;
+      @apply text-2xl font-extrabold font-sans inline-block;
       transition: 200ms ease;
 
       @screen lg {

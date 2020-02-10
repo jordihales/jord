@@ -2,19 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-white;
+:root {
+  --text-color: #000;
+  --body-color: #f7f7f7;
+}
+
+[data-theme="dark"] {
+  --text-color: #f7f7f7;
+  --body-color: #000;
+}
+
+.app {
+  color: var(--text-color);
+  background-color: var(--body-color);
+  transition: 0.3s ease;
+}
+
+.toggle {
+  @apply absolute inline-block w-6 h-6;
+
+  border-radius: 50px;
+  border-width: 2px;
+  border-color: var(--text-color);
+  right: 2rem;
+}
+
+.toggle input {
+  display: none;
 }
 
 .banner {
-  @apply bg-white flex items-center h-64 py-64 justify-center w-full;
+  @apply flex items-center h-64 py-64 justify-center w-full;
 
   @screen lg {
     @apply h-screen;
   }
 
   &__title {
-    @apply text-black text-5xl font-extrabold leading-tight;
+    @apply text-5xl font-extrabold leading-tight;
 
     @screen lg {
       @apply text-6xl;
@@ -23,71 +48,13 @@ body {
 }
 
 .split--white {
-  @apply w-full bg-white py-16 justify-center;
+  @apply w-full py-16 justify-center;
 
   @screen lg {
     @apply w-1/2 h-screen;
   }
 }
 
-.split--pink {
-  @apply w-full bg-primary text-center items-center justify-center flex;
-
-  @screen lg {
-    @apply w-1/2 h-screen;
-  }
-}
-
-.split--black {
-  @apply w-full bg-black text-center items-center justify-center flex;
-
-  @screen lg {
-    @apply w-1/2 h-screen;
-  }
-}
-
-.spacey {
-  @apply text-2xl;
-
-  a {
-    background-image: linear-gradient(110deg, #f7aef8, #b388eb, #8093f1, #72ddf7, #f4f4ed);
-    background-size: 0 10%;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    display: inline;
-    transition: 0.5s ease;
-  }
-
-  &:hover {
-    a {
-      background-size: 100% 10%;
-    }
-  }
-}
-
-.black__title {
-  @apply text-4xl;
-
-  @screen lg {
-    @apply text-6xl;
-  }
-
-  transform: rotate(90deg);
-}
-
-.black__list {
-  li {
-    @screen lg {
-      @apply text-5xl;
-    }
-  }
-}
-
-.pink__title {
-  @apply text-4xl;
-
-  @screen lg {
-    @apply text-6xl;
-  }
-  transform: rotate(-90deg);
+.break {
+  border-color: var(--text-color);
 }
