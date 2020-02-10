@@ -1,16 +1,20 @@
 <template>
-  <section class="flex flex-wrap h-screen w-full">
-    <div class="split--white">
-      <h2 class="uppercase black__title">I can use</h2>
-    </div>
-    <div class="split--pink">
-      <ul class="skills-list">
-        <li v-for="group in skills" class="skills-list__item">
-          <span v-for="(skill, index) in group" class="skills-list__text">
-            {{ skill }} <span v-show="index != group.length - 1">/</span>
-          </span>
-        </li>
-      </ul>
+  <section class="flex flex-wrap py-12">
+    <div class="container flex justify-center w-3/5">
+      <div class="py-12 px-10 w-1/2">
+        <p class="font-mono text-xs">Skills</p>
+        <ul class="skills-list">
+          <li v-for="group in skills" class="skills-list__item">
+            <span v-for="(skill, index) in group" class="skills-list__text">
+              {{ skill }} <span v-show="index != group.length - 1">,&nbsp;</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="py-12 px-10 w-1/2">
+        <p class="font-mono text-xs">Developer</p>
+        <p class="font-mono mt-4">Front end developer specialising in minimalistic tailor-made digital solutions. Blending beautiful, minimal designs with functional, clean code to produce a vision that is both aesthetically and technically pleasing.</p>
+      </div>
     </div>
   </section>
 </template>
@@ -34,21 +38,20 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   .skills-list {
-    @apply -mb-4;
+    @apply -mb-2;
 
     &__item {
-      @apply mb-4;
     }
 
     &__text {
-      @apply text-2xl text-white uppercase inline-block;
+      @apply text-2xl text-black font-extrabold font-sans inline-block;
       transition: 200ms ease;
 
       @screen lg {
-        @apply text-4xl;
+        @apply text-3xl;
       }
       &:hover {
-        filter: blur(5px);
+        filter: blur(2px);
       }
     }
   }

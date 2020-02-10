@@ -1,6 +1,11 @@
 <template>
-  <footer class="bg-black w-full flex items-center justify-center py-6 absolute">
-    <h3 class="text-sm text-white uppercase">&copy Jord Hales - 2020</h3>
+  <footer class="py-12">
+    <div class="container flex w-3/5">
+      <div class="px-10">
+        <a class="text-3xl font-mono" href="mailto:jordi@halesdesignco.com">Contact Me</a>
+        <hr class="break">
+      </div>
+    </div>
   </footer>
 </template>
 
@@ -12,5 +17,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
+  .break {
+    border-color: #1a1a1a;
+  }
 </style>

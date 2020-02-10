@@ -1,6 +1,6 @@
 <template>
-  <header class="w-full absolute">
-    <h3 class="text-white uppercase py-6 pl-6">JORD</h3>
+  <header class="w-full absolute bg-white py-8">
+    <img src="../assets/terminal.svg" class="h-6 pl-12">
   </header>
 </template>
 

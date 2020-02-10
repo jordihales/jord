@@ -1,16 +1,11 @@
 <template>
-  <header class="w-full absolute">
-    <h3 class="text-white uppercase py-6 pl-6">Jord.</h3>
-  </header>
-</template>
-
-<template>
   <section class="banner">
-    <div class="container">
-      <h1 class="banner__title">
-        I build<br>
-        websites
-      </h1>
+    <div class="container flex justify-center">
+      <div class="w-3/5">
+        <h1 class="banner__title font-sans">
+          Front end developer blurring the lines between minimal design and functional code.
+        </h1>
+      </div>
     </div>
   </section>
 </template>
