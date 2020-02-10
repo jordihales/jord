@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full absolute py-8 flex">
+  <header class="w-full py-8 flex fixed">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.022 36" class="h-6 pl-12 header__logo">
       <defs/>
       <path fill="currentColor" d="M54.825 32.03a.919.919 0 00-.758-.313H21.948a.919.919 0 00-.758.313 1.076 1.076 0 00-.313.758v2.141a.919.919 0 00.313.759 1.076 1.076 0 00.758.312h32.119a.919.919 0 00.758-.312 1.076 1.076 0 00.313-.759v-2.14a.919.919 0 00-.313-.76z"/>
