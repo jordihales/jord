@@ -2,7 +2,7 @@
   <section class="flex flex-wrap py-12">
     <div class="container flex justify-center w-3/5">
       <div class="py-12 px-10 w-1/2">
-        <p class="font-mono text-xs mb-4">Skills</p>
+        <p class="font-mono text-xs mb-3">Skills</p>
         <ul class="skills-list">
           <li v-for="group in skills" class="skills-list__item">
             <span v-for="(skill, index) in group" class="skills-list__text">
