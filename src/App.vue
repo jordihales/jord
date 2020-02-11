@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="app" :data-theme="mode">
+  <div class="app" :class="(mode === 'dark') ? 'dark' : 'light'">
     <Header :mode="mode" @toggle="toggle"/>
     <HelloWorld/>
     <Banner/>

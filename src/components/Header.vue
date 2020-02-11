@@ -16,10 +16,10 @@ import Toggle from '@/components/Toggle'
 
 export default {
   name: 'Header',
+  props: ['mode'],
   components: {
     Toggle
   }
-
 }
 </script>
 
