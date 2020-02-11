@@ -28,6 +28,7 @@ export default {
   },
   components: {
     Header,
+    Toggle,
     HelloWorld,
     Banner,
     Skills,
