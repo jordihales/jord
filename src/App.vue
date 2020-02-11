@@ -1,7 +1,6 @@
 <template>
   <div id="app" class="app" :data-theme="mode">
     <Header :mode="mode" @toggle="toggle"/>
-    <Toggle/>
     <HelloWorld/>
     <Banner/>
     <Skills/>
@@ -17,7 +16,6 @@ import Banner from './components/Banner.vue'
 import Skills from './components/Skills.vue'
 import Social from './components/Social.vue'
 import Footer from './components/Footer.vue'
-import Toggle from './components/Toggle.vue'
 
 export default {
   name: 'app',
@@ -28,7 +26,6 @@ export default {
   },
   components: {
     Header,
-    Toggle,
     HelloWorld,
     Banner,
     Skills,
