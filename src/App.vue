@@ -21,7 +21,7 @@ export default {
   name: 'app',
   data () {
     return {
-      mode: "dark"
+      mode: "light"
     }
   },
   components: {
