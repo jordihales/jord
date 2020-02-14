@@ -6,7 +6,7 @@
         <ul class="skills-list">
           <li v-for="group in skills" class="skills-list__item">
             <span v-for="(skill, index) in group" class="skills-list__text">
-              {{ skill }} <span v-show="index != group.length - 1">,&nbsp;</span>
+              {{ skill }} <span v-show="index != group.length - 1"></span>
             </span>
           </li>
         </ul>

@@ -32,17 +32,25 @@
 }
 
 .banner {
-  @apply flex items-center h-64 py-64 justify-center w-full;
+  @apply flex items-center pt-40 justify-center w-full;
 
   @screen lg {
-    @apply h-screen;
+    @apply h-screen py-64;
   }
 
   &__title {
-    @apply text-5xl font-extrabold leading-tight;
+    @apply text-3xl font-extrabold leading-tight;
 
     @screen lg {
       @apply text-6xl;
+    }
+  }
+
+  &__wrapper {
+    @apply w-full;
+
+    @screen lg {
+      @apply w-3/5;
     }
   }
 }
