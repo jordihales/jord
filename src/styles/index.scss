@@ -19,7 +19,7 @@
 }
 
 .toggle {
-  @apply absolute inline-block w-6 h-6;
+  @apply inline-block w-6 h-6;
 
   border-radius: 50px;
   border-width: 2px;
@@ -31,6 +31,9 @@
   display: none;
 }
 
+.header_logo {
+  fill: var(--text-color);
+}
 .banner {
   @apply flex items-center pt-40 justify-center w-full;
 
