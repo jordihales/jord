@@ -1,12 +1,12 @@
 <template>
-  <header class="w-full py-6 flex fixed justify-between items-center">
+  <header class="header w-full py-4 md:py-6 flex fixed justify-between items-center">
 
     <svg
       id="Layer_1"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 99.30424 86"
-      class="h-12 pl-12 header_logo"
+      class="h-8 md:h-12 pl-8 header_logo"
     >
       <path
         d="M50,0,.34788,86H99.65212Zm0,12.11269,39.16223,67.831H10.83777Z"

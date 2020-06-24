@@ -4,8 +4,14 @@
       <div class="py-12 px-10 w-1/2">
         <p class="font-mono text-xs mb-3">Skills</p>
         <ul class="skills-list">
-          <li v-for="group in skills" class="skills-list__item">
-            <span v-for="(skill, index) in group" class="skills-list__text">
+          <li
+            v-for="group in skills"
+            class="skills-list__item"
+          >
+            <span
+              v-for="(skill, index) in group"
+              class="skills-list__text"
+            >
               {{ skill }} <span v-show="index != group.length - 1"></span>
             </span>
           </li>
@@ -29,9 +35,9 @@ export default {
         illustration: ["Illustration"],
         uiux: ["UI/UX Design"]
       }
-    }
+    };
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

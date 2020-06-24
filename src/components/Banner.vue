@@ -6,7 +6,7 @@
           Front end developer blurring the lines between minimal design and functional code.
         </h1>
       </div>
-      <div class="banner__social right-0 fixed mr-10">
+      <div class="hidden md:block banner__social right-0 fixed mr-10">
         <ul class="font-mono">
           <li class="mb-4"><a href="https://www.twitter.com/consolelogjordi">Tw</a></li>
           <li class="mb-4"><a href="https://www.github.com/jordihales">Gh</a></li>
@@ -20,11 +20,10 @@
 
 <script>
 export default {
-  name: 'Banner'
-}
+  name: "Banner"
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
 </style>

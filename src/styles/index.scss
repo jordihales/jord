@@ -31,11 +31,19 @@
   display: none;
 }
 
+.header {
+  background: var(--body-color);
+
+  @screen lg {
+    background: transparent;
+  }
+}
+
 .header_logo {
   fill: var(--text-color);
 }
 .banner {
-  @apply flex items-center pt-40 justify-center w-full;
+  @apply flex items-center pt-24 justify-center w-full;
 
   @screen lg {
     @apply h-screen py-64;
