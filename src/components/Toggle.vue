@@ -1,25 +1,14 @@
 <template>
-  <div class="toggle-wrapper">
-    <label class="toggle">
-      <input
-        type="checkbox"
-        :checked="(mode === 'dark') ? 'checked' : false"
-        @change="$emit('toggle')"
-      />
-    </label>
-  </div>
+  <button type="button" class="toggle" @click="$emit('toggle')"></button>
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      mode: "dark"
-    }
+<style lang="scss" scoped>
+.toggle {
+  @apply inline-block w-6 h-6 border-2 rounded-full transition-colors duration-300;
+  border-color: var(--text-color);
+
+  &:focus {
+    @apply outline-none shadow-outline;
   }
 }
-</script>
-
-<style lang="scss">
-
 </style>
