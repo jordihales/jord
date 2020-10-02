@@ -12,21 +12,14 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  @apply px-8 py-4;
+  @apply px-8 py-4 relative z-10;
+  background-color: var(--body-color);
 
   &__link {
-    @apply font-mono text-lg uppercase pb-1 relative;
-
-    &:before {
-      content: '';
-      @apply bottom-0 left-0 w-full h-px absolute transition-size duration-200;
-      background-color: var(--text-color);
-    }
+    @apply font-mono text-lg uppercase pb-1 relative transform inline-block;
 
     &:hover {
-      &:before {
-        @apply w-0;
-      }
+      @apply -rotate-180;
     }
   }
 }
