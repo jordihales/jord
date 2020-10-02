@@ -1,53 +1,42 @@
 <template>
-  <div
-    class="app"
-    :class="mode === 'dark' ? 'dark' : 'light'"
-  >
-    <Header
-      :mode="mode"
-      @toggle="toggle"
-    />
-    <Banner />
-    <Skills />
-    <Social />
+  <div id="app" class="app" :class="mode === 'dark' ? 'dark' : 'light'">
+    <Header :mode="mode" @toggle="toggle" />
+    <main role="main">
+      <Banner />
+      <DeveloperSkills />
+      <DesignerSkills />
+      <Social />
+    </main>
     <Footer />
   </div>
 </template>
 
 <script>
-import axios from "axios";
-import Header from "../components/Header.vue";
-import Banner from "../components/Banner.vue";
-import Skills from "../components/Skills.vue";
-import Social from "../components/Social.vue";
-import Footer from "../components/Footer.vue";
+import Header from '../components/Header'
+import Banner from '../components/Banner'
+import DeveloperSkills from '../components/DeveloperSkills'
+import DesignerSkills from '../components/DesignerSkills'
+import Social from '../components/Social'
+import Footer from '../components/Footer'
 
 export default {
-  name: "app",
   data() {
     return {
-      mode: "light"
-    };
+      mode: 'light',
+    }
   },
   components: {
     Header,
     Banner,
-    Skills,
+    DeveloperSkills,
+    DesignerSkills,
     Social,
-    Footer
+    Footer,
   },
   methods: {
     toggle() {
-      if (this.mode === "dark") {
-        this.mode = "light";
-      } else {
-        this.mode = "dark";
-      }
-    }
-  }
-};
+      this.mode = this.mode === 'dark' ? 'light' : 'dark'
+    },
+  },
+}
 </script>
-
-<style lang="scss">
-@import "../styles/index.scss";
-</style>

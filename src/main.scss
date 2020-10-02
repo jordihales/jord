@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-color: theme('colors.black');
+  --body-color: theme('colors.white');
+}
+
+.dark {
+  --text-color: theme('colors.white');
+  --body-color: theme('colors.black');
+}
+
+.app {
+  color: var(--text-color);
+  background-color: var(--body-color);
+  @apply transition-colors duration-300;
+}
