@@ -26,10 +26,10 @@
   }
 
   &__link {
-    @apply transition-opacity duration-300;
+    @apply transform inline-block;
 
     &:hover {
-      @apply opacity-50;
+      @apply -rotate-180;
     }
   }
 }

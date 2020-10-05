@@ -1,42 +1,26 @@
 <template>
-  <div id="app" class="app" :class="mode === 'dark' ? 'dark' : 'light'">
-    <Header :mode="mode" @toggle="toggle" />
-    <main role="main">
-      <Banner />
-      <DeveloperSkills />
-      <DesignerSkills />
-      <Social />
-    </main>
-    <Footer />
-  </div>
+  <Layout>
+    <Banner title="Front end developer blurring the lines between minimal design and functional code." />
+    <DeveloperSkills />
+    <DesignerSkills />
+    <Social />
+  </Layout>
 </template>
 
 <script>
-import Header from '../components/Header'
-import Banner from '../components/Banner'
-import DeveloperSkills from '../components/DeveloperSkills'
-import DesignerSkills from '../components/DesignerSkills'
-import Social from '../components/Social'
-import Footer from '../components/Footer'
+import Banner from '@/components/Banner'
+import DesignerSkills from '@/components/DesignerSkills'
+import DeveloperSkills from '@/components/DeveloperSkills'
+import Layout from '@/components/Layout'
+import Social from '@/components/Social'
 
 export default {
-  data() {
-    return {
-      mode: 'light',
-    }
-  },
   components: {
-    Header,
     Banner,
-    DeveloperSkills,
     DesignerSkills,
+    DeveloperSkills,
+    Layout,
     Social,
-    Footer,
-  },
-  methods: {
-    toggle() {
-      this.mode = this.mode === 'dark' ? 'light' : 'dark'
-    },
   },
 }
 </script>

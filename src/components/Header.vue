@@ -1,21 +1,36 @@
 <template>
   <header class="header">
-    <Logo />
-    <Toggle :mode="mode" @toggle="$emit('toggle')" />
+    <Logo :fill="fill" />
+    <Toggle v-if="toggleable" :mode="mode" @toggle="$emit('toggle')" />
   </header>
 </template>
-
-
 
 <script>
 import Logo from '@/components/Logo'
 import Toggle from '@/components/Toggle'
 
 export default {
-  props: ['mode'],
+  data() {
+    return {
+      fill: this.mode,
+    }
+  },
+  props: {
+    mode: String,
+    toggleable: Boolean,
+  },
   components: {
     Logo,
     Toggle,
+  },
+  mounted() {
+    document.addEventListener('scroll', () => {
+      const projectBanner = document.querySelector('#projectBanner')
+
+      if (projectBanner) {
+        this.fill = window.scrollY + 50 > projectBanner.getBoundingClientRect().bottom ? 'text-black' : 'text-white'
+      }
+    })
   },
 }
 </script>
